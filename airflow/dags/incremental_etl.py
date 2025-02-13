@@ -114,7 +114,6 @@ extract_data = PythonOperator(
     dag=dag
 )
 
-# Step 4: Upload to Snowflake stage
 upload_stage = PythonOperator(
     task_id="upload_stage",
     python_callable=upload_to_snowflake_stage,
@@ -126,7 +125,6 @@ upload_stage = PythonOperator(
     dag=dag,
 )
 
-# # Step 5: Run MERGE into final table
 merge_table = SnowflakeOperator(
     task_id="merge_table",
     sql=f"""

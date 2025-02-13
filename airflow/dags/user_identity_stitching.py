@@ -17,7 +17,6 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    # Run dbt inside the Airflow container
     dbt_run = BashOperator(
         task_id="dbt_run",
         bash_command="cd /opt/airflow/dbt && dbt run --profiles-dir .dbt",
