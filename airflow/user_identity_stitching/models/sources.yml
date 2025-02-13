@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: SCRATCH
+    database: HIRING
+    schema: SCRATCH
+    tables:
+      - name: EVENTS_DAP

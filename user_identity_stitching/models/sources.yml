@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: PUBLIC
+    database: HIRING
+    schema: PUBLIC
+    tables:
+      - name: EVENTS

@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: persons
+    columns:
+      - name: unique_person_check_1
+        tests:
+          - dbt_utils.expression_is_true:
+              expression: "unique_person_check_1 = 1"
