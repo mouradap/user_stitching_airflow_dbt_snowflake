@@ -13,7 +13,7 @@ from datetime import datetime
 import logging
 
 SNOWFLAKE_CONN_ID = "snowflake_default"
-API_EXTRACT_ENDPOINT = "https://neonblue--nblearn-hiring-read.modal.run"
+API_EXTRACT_ENDPOINT = ""
 LABEL = "denis-test1"
 API_EXTRACT_BASE_DATA = {
     "label": LABEL,
